@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Th8prd" name="Simple FM Granulator" projectType="audioplug"
+              jucerVersion="5.4.3" projectLineFeed="&#10;" companyName="Rodolfo Cangiotti"
+              companyCopyright="&#169; 2019, Some rights reserved." pluginFormats="buildAU,buildAUv3,buildStandalone,buildVST,buildVST3"
+              pluginCharacteristicsValue="pluginIsSynth">
+  <MAINGROUP id="VFBd3d" name="Simple FM Granulator">
+    <GROUP id="{07CC9CFA-17FE-8516-3FDD-C60AA6B69B7E}" name="Source">
+      <FILE id="sIS3lM" name="ioformats.h" compile="0" resource="0" file="Source/ioformats.h"/>
+      <FILE id="ZjOTxj" name="GrainStream.h" compile="0" resource="0" file="Source/GrainStream.h"/>
+      <FILE id="WGnmrU" name="Grain.h" compile="0" resource="0" file="Source/Grain.h"/>
+      <FILE id="sizSKX" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
+      <FILE id="S21MhU" name="StereoPanner.h" compile="0" resource="0" file="Source/StereoPanner.h"/>
+      <FILE id="e0jBex" name="GrainStream.cpp" compile="1" resource="0" file="Source/GrainStream.cpp"/>
+      <FILE id="vH2SWQ" name="dsputils.cpp" compile="1" resource="0" file="Source/dsputils.cpp"/>
+      <FILE id="OETixq" name="Grain.cpp" compile="1" resource="0" file="Source/Grain.cpp"/>
+      <FILE id="jvNYHF" name="commons.h" compile="0" resource="0" file="Source/commons.h"/>
+      <FILE id="jicl89" name="Oscillator.cpp" compile="1" resource="0" file="Source/Oscillator.cpp"/>
+      <FILE id="J43sUb" name="StereoPanner.cpp" compile="1" resource="0"
+            file="Source/StereoPanner.cpp"/>
+      <FILE id="oxRWWa" name="tables.cpp" compile="1" resource="0" file="Source/tables.cpp"/>
+      <FILE id="lIaF7A" name="tables.h" compile="0" resource="0" file="Source/tables.h"/>
+      <FILE id="iYBqwW" name="types.h" compile="0" resource="0" file="Source/types.h"/>
+      <FILE id="enGtZT" name="dsputils.h" compile="0" resource="0" file="Source/dsputils.h"/>
+      <FILE id="ei6Hat" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="GAj98X" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="KgpFD1" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="c6BebZ" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
